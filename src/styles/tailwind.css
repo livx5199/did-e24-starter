@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+  /*FONTS*/
 
+  h1,
+  h2,
+  h3,
+  p,
+  label {
+    color: whitesmoke;
+  }
+
+  p,
+  h3,
+  button,
+  input,
+  label {
+    font-family: "Crimson Text";
+  }
+
+  h1,
+  h2 {
+    font-family: "Codystar";
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  /*FORMS*/
+
+  input {
+    background-color: #640923;
+    border-style: none;
+  }
 }
