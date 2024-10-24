@@ -6,11 +6,27 @@ import Link from "../components/Link.astro";
 
 <MainLayout title="Titel">
   <article>
-    <h1>Index overskrift</h1>
-    <Button>Klik!</Button>
-    <p>
-      Link til <Link href="https://www.kea.dk" target="_blank"
-        >En anden side</Link>
-    </p>
+    <section
+      class="grid grid-cols-3 grid-rows-3 relative m-6 mt-0 max-h-screen"
+    >
+      <img
+        src="/src/assets/images/fisk.webp"
+        alt="Fisk i baggrunden"
+        class="max-w-md col-start-1 col-span-2 row-start-1 row-span-2 cover z-0"
+      />
+      <h1
+        class="text-9xl col-start-1 col-span-2 row-start-2 row-span-2 z-10 ml-56 self-end"
+      >
+        <span>
+          Single <br /> use <br />sucks
+        </span>
+      </h1>
+      <h2 class="col-start-3 col-span-1 row-start-2 row-span-2 self-end">
+        Her står noget rigtig sejt! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Nihil omnis nostrum temporibus minima quae hic harum
+        veritatis illo odio? Pariatur! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit.
+      </h2>
+    </section>
   </article>
 </MainLayout>

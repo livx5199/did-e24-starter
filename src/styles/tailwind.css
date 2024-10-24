@@ -15,14 +15,14 @@
 
   p,
   h3,
+  h2,
   button,
   input,
   label {
     font-family: "Crimson Text";
   }
 
-  h1,
-  h2 {
+  h1 {
     font-family: "Codystar";
   }
 
@@ -32,6 +32,10 @@
 
   h2 {
     font-size: 2rem;
+  }
+
+  span {
+    background-color: black;
   }
 
   /*FORMS*/
