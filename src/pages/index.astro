@@ -5,28 +5,310 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Titel">
-  <article>
+  <article class="flex flex-col content-center gap-20">
     <section
-      class="grid grid-cols-3 grid-rows-3 relative m-6 mt-0 max-h-screen"
+      class="grid overflow-hidden grid-cols-3 grid-rows-3 relative p-6 pt-0 h-screen w-full"
     >
+      <img
+        src="/src/assets/images/mikroplastic1.webp"
+        alt=""
+        class="parallaxelement2 col-start-3 col-span-1 row-start-3 row-span-1 z-20 max-w-48"
+      />
+      <img
+        src="/src/assets/images/mikroplastic2.webp"
+        alt=""
+        class="parallaxelement2 col-start-2 col-span-1 row-start-1 row-span-1 z-20 max-w-48"
+      />
       <img
         src="/src/assets/images/fisk.webp"
         alt="Fisk i baggrunden"
-        class="max-w-md col-start-1 col-span-2 row-start-1 row-span-2 cover z-0"
+        class="parallaxgrafik2 col-start-1 col-span-2 row-start-1 row-span-2 cover z-0"
       />
       <h1
-        class="text-9xl col-start-1 col-span-2 row-start-2 row-span-2 z-10 ml-56 self-end"
+        class="text-9xl parallaxelement col-start-1 col-span-2 row-start-2 row-span-2 z-10 ml-56 self-end"
       >
         <span>
           Single <br /> use <br />sucks
         </span>
       </h1>
-      <h2 class="col-start-3 col-span-1 row-start-2 row-span-2 self-end">
+      <h2
+        class="col-start-3 parallaxelement col-span-1 row-start-2 row-span-2 self-end mr-6"
+      >
         Her står noget rigtig sejt! Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Nihil omnis nostrum temporibus minima quae hic harum
         veritatis illo odio? Pariatur! Lorem ipsum dolor sit amet consectetur
         adipisicing elit.
       </h2>
     </section>
+
+    <section
+      class="grid
+      grid-cols-4
+      grid-rows-4
+      pt-0
+      h-screen
+      w-full z-30 parallaxelement"
+    >
+      <img
+        class="col-start-4 col-span-1 row-start-4 row-span-1 self-center w-44 parallaxelementsektion2 z-10 justify-self-end"
+        src="/src/assets/images/bottle.webp"
+        alt="En tom vandflaske"
+      />
+      <h1
+        class="col-start-1 col-span-3 row-start-1 sektion2 pl-20 row-span-1 align-baseline"
+      >
+        <span>Hvor kommer plastik i havet fra?</span>
+      </h1>
+      <p
+        class="m-6 col-start-1 col-span-1 pl-20 row-start-3 self-baseline row-span-1 z-10"
+      >
+        Plastik, der lander i havet, kommer fra rigtig mange forskellige kilder,
+        især engangsprodukter som mademballage, flasker, slik- og chipspapir.
+        Brugte fiskenet tabes også i havet, ofte fordi de efterlades, fordi det
+        mange steder koster penge at komme af med affaldet i havne. Mikroplastik
+        tabes direkte fra land til havet, fra brug af produkter som bildæk, tøj,
+        maling og plastik råmateriale til fremstilling af plastikprodukter.
+      </p>
+      <img
+        class="col-start-1 col-span-1 row-start-3 row-span-1 w-36 parallaxelementsektion2"
+        src="/src/assets/images/chips.webp"
+        alt="En tom chipspose"
+      />
+      <img
+        class="col-start-2 col-span-3 row-start-2 row-span-3 justify-self-end"
+        src="/src/assets/images/plastik-fordeling-graf.webp"
+        alt="Graf over fordeling af plastik i havene"
+      />
+    </section>
+
+    <section
+      class="grid
+    grid-cols-4
+    grid-rows-4
+    pt-0
+    m-10
+    h-screen
+    w-full z-30 parallaxelement"
+    >
+      <h1
+        class="col-start-1 col-span-4 inline-block place-self-start align-baseline pl-20"
+      >
+        <span>Hvad er problemet med plastik i havene?</span>
+      </h1>
+      <p
+        class="col-start-1 text-xs col-span-1 row-start-3 row-span-2 place-self-end pl-20"
+      >
+        Plastik har mange konsekvenser for miljøet. F.eks. kan det være en
+        trussel mod dyr i alle størrelser og op gennem hele fødekæden, fordi de
+        tror det er mad eller fordi de vikles ind i det. Det betyder, at der er
+        dyr, der bliver kvalt i plastik eller dør af sult. Man regner med, at
+        mindst 2249 havlevende dyrearter påvirkes af plastikforurening, og mange
+        af dem er i forvejen truede arter. Når mikroplastik ligger i havet kan
+        det “suge” miljøgifte og farlige kemikalier til sig, som dyrene får med,
+        når de spiser plastik, og som mennesker får i sig når de spiser f.eks.
+        fisk, muslinger og skaldyr. Plastik er også grimt, når det ligger i
+        naturen, og kan desuden stoppe vandløb og kvæle planter og dyreliv, når
+        det hober sig op.
+      </p>
+      <div
+        class="grid grid-cols-2 grid-rows-2 col-start-2 col-span-3 row-start-2 row-span-3 justify-items-center"
+      >
+        <div
+          class="grid grid-cols-2 grid-rows-2 col-start-1 col-span-1 row-start-1 row-span-1"
+        >
+          <img
+            src="/src/assets/images/seagull.webp"
+            alt="Billede af måge"
+            class="col-start-1 col-span-3 row-start-1 row-span-3 w-96"
+          />
+          <h3
+            class="col-start-2 col-span-1 row-start-2 row-span-1 place-self-end text-lg"
+          >
+            <span>
+              1 million havfugle dør hvert år som konsekvens af plastikaffald i
+              havet</span
+            >
+          </h3>
+        </div>
+        <div
+          class="grid grid-cols-2 grid-rows-2 col-start-2 col-span-1 row-start-2 row-span-1"
+        >
+          <img
+            src="/src/assets/images/seal.webp"
+            alt="Billede af sæl"
+            class="col-start-1 col-span-3 row-start-1 row-span-3 w-72"
+          />
+          <h3 class="col-start-1 col-span-1 row-start-2 row-span-1 text-lg">
+            <span>... Det samme gør 100.000 vandpattedyr</span>
+          </h3>
+        </div>
+      </div>
+      <p class="col-start-3 col-span-1 row-start-3 row-span-1 place-self-end">
+        Kilde: <a
+          href="https://sustainabledevelopment.un.org/content/documents/Ocean_Factsheet_Pollution.pdf?fbclid=IwAR2rZxaYSKTIAfK6hS7rOOLg8jZQE14_SlVxkiEnfuzK0zzb2DFNIIAlFYc"
+          >FN</a
+        >
+      </p>
+    </section>
+
+    <section class="flex flex-row items-center h-screen
+    w-full z-30">
+      <h2 class="ml-64 mr-64 text-center">
+        Vi er nødt til at fokusere på at knække kurven for det stigende
+        plastikforbrug og -forurening i stedet for en ”brug-og-smid-væk”-kultur,
+        hvor vores dyrebare ressourcer ikke bliver brugt igen og igen.
+      </h2>
+    </section>
+
+    <section>
+      <h1 class="col-start-1 col-span-2 row-start-1 row-span-1 ml-20 gap-5">
+        <span>Syv gode råd til reducering af plastik</span>
+      </h1>
+      <div class="grid grid-cols-8 grid-rows-4 pl-20 justify-items-center">
+        <div
+          class="grid grid-cols-2 grid-rows-2 col-start-1 col-span-2 row-start-1 row-span-2 justify-items-center"
+        >
+          <img
+            src="/src/assets/images/seal.webp"
+            alt="Billede af sæl"
+            class="col-start-1 col-span-3 row-start-1 row-span-3 w-60"
+          />
+          <h3 class="col-start-1 col-span-1 row-start-2 row-span-1 text-lg">
+            <span class="text-center"
+              ><b>Dit indkøb</b>
+              <br />
+              Tag mulepose med og sig nej tak til plastikposer</span
+            >
+          </h3>
+        </div>
+        <div
+          class="grid grid-cols-2 grid-rows-2 col-start-3 col-span-2 row-start-1 row-span-3"
+        >
+          <img
+            src="/src/assets/images/seal.webp"
+            alt="Billede af sæl"
+            class="col-start-1 col-span-3 row-start-1 row-span-3 w-60"
+          />
+          <h3 class="col-start-1 col-span-1 row-start-2 row-span-1 text-lg">
+            <span
+              ><b>Din vandflaske</b>
+              <br />
+              Brug drikkedunk og undgå købevand</span
+            >
+          </h3>
+        </div>
+        <div
+          class="grid grid-cols-2 grid-rows-2 col-start-5 col-span-2 row-start-1 row-span-3"
+        >
+          <img
+            src="/src/assets/images/seal.webp"
+            alt="Billede af sæl"
+            class="col-start-1 col-span-3 row-start-1 row-span-3 w-60"
+          />
+          <h3 class="col-start-1 col-span-1 row-start-2 row-span-1 text-lg">
+            <span
+              ><b>Din mælk</b>
+              <br />
+              Køb mælk uden skruelåg</span
+            >
+          </h3>
+        </div>
+        <div
+          class="grid grid-cols-2 grid-rows-2 col-start-7 col-span-2 row-start-1 row-span-2"
+        >
+          <img
+            src="/src/assets/images/seal.webp"
+            alt="Billede af sæl"
+            class="col-start-1 col-span-3 row-start-1 row-span-3 w-60"
+          />
+          <h3 class="col-start-1 col-span-1 row-start-2 row-span-1 text-lg">
+            <span
+              ><b>Din fest</b>
+              <br />
+              Drop engangsservice, balloner og sugerør</span
+            >
+          </h3>
+        </div>
+        <div
+          class="grid grid-cols-2 grid-rows-2 col-start-2 col-span-2 row-start-3 row-span-2"
+        >
+          <img
+            src="/src/assets/images/seal.webp"
+            alt="Billede af sæl"
+            class="col-start-1 col-span-3 row-start-1 row-span-3 w-60"
+          />
+          <h3 class="col-start-1 col-span-1 row-start-2 row-span-1 text-lg">
+            <span
+              ><b>Din tøjvask</b>
+              <br />
+              Fyld maskinen, så du slider mindre på tøjet</span
+            >
+          </h3>
+        </div>
+        <div
+          class="grid grid-cols-2 grid-rows-2 col-start-4 col-span-2 row-start-3 row-span-2"
+        >
+          <img
+            src="/src/assets/images/seal.webp"
+            alt="Billede af sæl"
+            class="col-start-1 col-span-3 row-start-1 row-span-3 w-60"
+          />
+          <h3 class="col-start-1 col-span-1 row-start-2 row-span-1 text-lg">
+            <span
+              ><b>Dine plejeprodukter</b>
+              <br />
+              Køb i store beholdere, frem for mange små</span
+            >
+          </h3>
+        </div>
+        <div
+          class="grid grid-cols-2 grid-rows-2 col-start-6 col-span-2 row-start-3 row-span-2"
+        >
+          <img
+            src="/src/assets/images/seal.webp"
+            alt="Billede af sæl"
+            class="col-start-1 col-span-3 row-start-1 row-span-3 w-60"
+          />
+          <h3 class="col-start-1 col-span-1 row-start-2 row-span-1 text-lg">
+            <span
+              ><b>Dit toiletbesøg</b>
+              <br />
+              Kun tre ting i toilettet: Tis, lort og papir</span
+            >
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-row items-center h-screen
+    w-full z-30">
+      <h2 class="ml-64 mr-64 text-center">
+        Du kan også nemt og hurtigt støtte vores arbejde med en privat donation,
+        eller at <a href="https://plasticchange.dk/bliv-medlem/"
+          >melde dig ind i vores organisation.</a
+        >
+      </h2>
+    </section>
   </article>
 </MainLayout>
+
+<script>
+  /* Import af Motion One biblioteket */
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+
+  scroll(animate(".parallaxelement", { y: [-300, -100] }), {
+    target: document.querySelector(".parallaxelement"),
+  });
+
+  scroll(animate(".parallaxelement2", { y: [-500, 700] }), {
+    target: document.querySelector(".parallaxelement"),
+  });
+
+  scroll(animate(".parallaxgrafik2", { x: [-100, 0], y: [-200, 0] }), {
+    target: document.querySelector(".parallaxelement"),
+  });
+
+  scroll(animate(".parallaxelementsektion2", { y: [-600, 200] }), {
+    target: document.querySelector(".sektion2"),
+  });
+</script>

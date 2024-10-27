@@ -44,4 +44,15 @@
     background-color: #640923;
     border-style: none;
   }
+
+  /*ANDRE*/
+
+  a {
+    color: #ff1054;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
