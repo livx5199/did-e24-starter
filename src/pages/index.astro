@@ -309,10 +309,10 @@ import Link from "../components/Link.astro";
       </h2>
     </section>
 
-    <section class="ml-20 w-full h-screen">
+    <section class="ml-20 w-auto h-screen mr-20">
       <h1><span>Hvem er Plastic Change?</span></h1>
-      <div class="grid grid-cols-4 grid-rows-4 justify-items-center">
-        <p class="row-start-1 row-span-1 col-start-1 col-span-1">
+      <div class="grid grid-cols-2 grid-rows-5">
+        <p class="row-start-3 row-span-2 col-start-1 col-span-1 w-96">
           Målet om at udfase engangsplastik og skabe bedre genbrugsløsninger er
           en del af alt, hvad vi laver. Både i vores politiske arbejde, i
           samarbejde med vores innovationspartnere og med civilbefolkningen. Og
@@ -323,24 +323,24 @@ import Link from "../components/Link.astro";
           sidst at øge genanvendelsen.
         </p>
         <div
-          class="flex flex-col row-start-2 col-span-2 col-start-2 row-span-2"
+          class="flex flex-row col-start-2 row-start-1 row-span-5 col-span-2 syv-råd"
         >
-          <h3><span>Virkeligheden</span></h3>
-          <img
-            src="/src/assets/images/trekantsgraf-virkelighed.svg"
-            alt="Pyramidegraf over anvendelse af plastik nu fra mest til mindst"
-            class="w-80"
-          />
-        </div>
-        <div
-          class="flex flex-col row-start-1 col-span-2 col-start-3 row-span-2"
-        >
-          <img
-            src="/src/assets/images/trekantsgraf-ønske.svg"
-            alt="Pyramidegraf over anvendelse af plastik efter vores ønske fra mest til mindst"
-            class="w-80"
-          />
-          <h3><span>Vores ønske</span></h3>
+          <div class="flex flex-col items-center">
+            <h3 class="mb-5"><span>Virkeligheden</span></h3>
+            <img
+              src="/src/assets/images/trekantsgraf-virkelighed.svg"
+              alt="Pyramidegraf over anvendelse af plastik nu fra mest til mindst"
+              class="w-80"
+            />
+          </div>
+          <div class="flex flex-col items-center">
+            <h3 class="mb-5"><span>Vores ønske</span></h3>
+            <img
+              src="/src/assets/images/trekantsgraf-ønske.svg"
+              alt="Pyramidegraf over anvendelse af plastik efter vores ønske fra mest til mindst"
+              class="w-80"
+            />
+          </div>
         </div>
       </div>
     </section>
