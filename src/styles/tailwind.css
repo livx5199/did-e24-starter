@@ -3,6 +3,24 @@
 @tailwind utilities;
 
 @layer base {
+  /* body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .article {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  .scroll-snap {
+    scroll-snap-align: start;
+  } */
   /*FONTS*/
 
   h1,
@@ -34,6 +52,10 @@
     font-size: 2rem;
   }
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
   span {
     background-color: black;
   }
@@ -45,6 +67,10 @@
     border-style: none;
   }
 
+  .form-baggrund {
+    background-color: #a03758;
+  }
+
   /*ANDRE*/
 
   a {
@@ -54,5 +80,24 @@
   a:hover {
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  .plastik-i-havene,
+  .måge,
+  .sæl,
+  .syv-råd {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
   }
 }
