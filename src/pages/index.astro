@@ -5,9 +5,7 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Titel">
-  <div
-    class="flex article flex-col items-center justify-items-center overflow-x-hidden"
-  >
+  <div class="flex article flex-col overflow-x-hidden">
     <section
       class="grid grid-cols-3 grid-rows-3 relative p-6 pt-0 h-screen w-full scroll-snap"
     >
@@ -151,26 +149,38 @@ import Link from "../components/Link.astro";
       </div>
     </section>
 
-    <section class="flex flex-row items-center h-screen
-    w-full z-30">
-      <h2 class="ml-64 mr-64 text-center parallax-s4">
+    <section
+      class="grid grid-cols-1 grid-rows-1 h-screen overflow-hidden
+    w-full"
+    >
+      <h2
+        class="ml-64 mr-64 text-center z-10 row-start-1 col-start-1 self-center parallax-s4"
+      >
         Vi er nødt til at fokusere på at knække kurven for det stigende
         plastikforbrug og -forurening i stedet for en ”brug-og-smid-væk”-kultur,
         hvor vores dyrebare ressourcer ikke bliver brugt igen og igen.
       </h2>
+      <img
+        class="row-start-1
+        col-start-1
+        w-40
+        parallax-crisps
+        z-0
+        self-center"
+        src="/src/assets/images/chips.webp"
+        alt=""
+      />
     </section>
 
-    <section>
+    <section class="ml-20 flex flex-col w-auto h-screen">
       <h1
-        class="col-start-1 col-span-2 row-start-1 row-span-1 ml-20 gap-5 parallax-s5"
+        class="col-start-1 col-span-2 row-start-1 row-span-1 gap-5 parallax-s5"
       >
         <span>Syv gode råd til reducering af plastik</span>
       </h1>
-      <div
-        class="grid grid-cols-8 grid-rows-4 pl-20 justify-items-center parallax-s5"
-      >
+      <div class="grid grid-cols-8 grid-rows-4 parallax-s5 justify-self-center">
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-1 col-span-2 row-start-1 row-span-2 items-center"
+          class="grid grid-cols-2 grid-rows-2 col-start-1 col-span-2 row-start-1 row-span-2 justify-items-center scale"
         >
           <img
             src="/src/assets/images/tote-bag.webp"
@@ -188,7 +198,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-3 col-span-2 row-start-1 row-span-2 items-center"
+          class="grid grid-cols-2 grid-rows-2 col-start-3 col-span-2 row-start-1 row-span-2 scale justify-items-center"
         >
           <img
             src="/src/assets/images/flask.webp"
@@ -206,7 +216,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-5 col-span-2 row-start-1 row-span-2 items-center"
+          class="grid grid-cols-2 grid-rows-2 col-start-5 col-span-2 row-start-1 row-span-2 justify-items-center scale"
         >
           <img
             src="/src/assets/images/milk.webp"
@@ -224,7 +234,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-7 col-span-2 row-start-1 row-span-2 items-center"
+          class="grid grid-cols-2 grid-rows-2 col-start-7 col-span-2 row-start-1 row-span-2 justify-items-center scale"
         >
           <img
             src="/src/assets/images/balloons.webp"
@@ -242,7 +252,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-2 col-span-2 row-start-3 row-span-2 items-center"
+          class="grid grid-cols-2 grid-rows-2 col-start-2 col-span-2 row-start-3 row-span-2 justify-items-center scale"
         >
           <img
             src="/src/assets/images/pants.webp"
@@ -260,7 +270,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-4 col-span-2 row-start-3 row-span-2 items-center"
+          class="grid grid-cols-2 grid-rows-2 col-start-4 col-span-2 row-start-3 row-span-2 justify-items-center scale"
         >
           <img
             src="/src/assets/images/beauty-products.webp"
@@ -278,7 +288,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-6 col-span-2 row-start-3 row-span-2 items-center"
+          class="grid grid-cols-2 grid-rows-2 col-start-6 col-span-2 row-start-3 row-span-2 justify-items-center scale"
         >
           <img
             src="/src/assets/images/toilet.webp"
@@ -310,8 +320,8 @@ import Link from "../components/Link.astro";
     </section>
 
     <section class="ml-20 w-auto h-screen mr-20">
-      <h1><span>Hvem er Plastic Change?</span></h1>
-      <div class="grid grid-cols-2 grid-rows-5">
+      <h1 class="parallax-s7"><span>Hvem er Plastic Change?</span></h1>
+      <div class="grid grid-cols-2 grid-rows-5 parallax-s7">
         <p class="row-start-3 row-span-2 col-start-1 col-span-1 w-96">
           Målet om at udfase engangsplastik og skabe bedre genbrugsløsninger er
           en del af alt, hvad vi laver. Både i vores politiske arbejde, i
@@ -346,9 +356,13 @@ import Link from "../components/Link.astro";
     </section>
 
     <section class="ml-20 w-full h-screen" id="donation">
-      <h1><span>Støt vores arbejde</span></h1>
-      <div class="grid grid-cols-2 justify-items-center">
-        <div class="form-baggrund flex flex-col w-3/5 p-5">
+      <h1 class="parallax-s8"><span>Støt vores arbejde</span></h1>
+      <div
+        class="grid grid-cols-2 grid-rows-1 justify-items-center items-center parallax-s8"
+      >
+        <div
+          class="form-baggrund flex flex-col w-3/5 p-5 col-start-1 row-start-1"
+        >
           <div class="flex flex-row pr-10 m-5">
             <div class="mr-4">
               <input
@@ -411,7 +425,9 @@ import Link from "../components/Link.astro";
           </div>
         </div>
 
-        <div class="pl-10 pr-10 w-4/5 flex flex-col items-center">
+        <div
+          class="pl-10 pr-10 w-4/5 flex flex-col items-center col-start-2 row-start-1"
+        >
           <img
             src="/src/assets/images/hjemhavn-cup.webp"
             alt="Et billede af en Plastic Change kop"
@@ -446,9 +462,9 @@ import Link from "../components/Link.astro";
     target: document.querySelector(".parallaxelement"),
   });
 
-  scroll(animate(".parallax-chips", { y: [-600, 200] }), {
-    target: document.querySelector(".parallax-chips"),
-  });
+  // scroll(animate(".parallax-chips", { y: [-600, 200] }), {
+  //   target: document.querySelector(".parallax-chips"),
+  // });
 
   scroll(animate(".parallax-flaske", { y: [-300, 300] }), {
     target: document.querySelector(".parallax-flaske"),
@@ -465,11 +481,23 @@ import Link from "../components/Link.astro";
     target: document.querySelector(".parallax-s4"),
   });
 
+  scroll(animate(".parallax-crisps", { y: [-200, 500] }), {
+    target: document.querySelector(".parallax-crisps"),
+  });
+
   scroll(animate(".parallax-s5", { y: [-100, 50] }), {
     target: document.querySelector(".parallax-s5"),
   });
 
   scroll(animate(".parallax-s6", { y: [-100, 50] }), {
     target: document.querySelector(".parallax-s6"),
+  });
+
+  scroll(animate(".parallax-s7", { y: [-100, 50] }), {
+    target: document.querySelector(".parallax-s7"),
+  });
+
+  scroll(animate(".parallax-s8", { y: [-100, 50] }), {
+    target: document.querySelector(".parallax-s8"),
   });
 </script>

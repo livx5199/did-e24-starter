@@ -68,6 +68,12 @@
     border-style: none;
   }
 
+  input[type="radio"]:checked,
+  input[type="checkbox"]:checked {
+    color: #640923;
+    border-color: #ff1054;
+  }
+
   .form-baggrund {
     background-color: #a03758;
   }
@@ -100,5 +106,15 @@
     100% {
       transform: translatey(0px);
     }
+  }
+
+  .scale:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+
+  .scale {
+    transition: transform 0.2s;
+    transform-origin: center;
   }
 }
