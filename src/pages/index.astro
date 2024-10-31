@@ -5,17 +5,17 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Titel">
-  <div class="flex article flex-col overflow-x-hidden">
+  <div class="flex article flex-col place-items-center overflow-x-hidden">
     <section
       class="grid grid-cols-3 grid-rows-3 relative p-6 pt-0 h-screen w-full scroll-snap"
     >
       <img
-        src="/src/assets/images/mikroplastic1.webp"
+        src="/src/assets/images/bike-tire.webp"
         alt=""
         class="parallaxelement2 col-start-3 col-span-1 row-start-3 row-span-1 z-20 max-w-48"
       />
       <img
-        src="/src/assets/images/mikroplastic2.webp"
+        src="/src/assets/images/plastic-bag.webp"
         alt=""
         class="parallaxelement2 col-start-2 col-span-1 row-start-1 row-span-1 z-20 max-w-48"
       />
@@ -42,8 +42,8 @@ import Link from "../components/Link.astro";
     </section>
 
     <section class="h-screen
-      w-full flex flex-col scroll-snap">
-      <h1 class="ml-20 parallax-s2">
+      w-full flex flex-col">
+      <h1 class="parallax-s2 ml-36">
         <span>Hvor kommer plastik i havet fra?</span>
       </h1>
       <div
@@ -53,14 +53,8 @@ import Link from "../components/Link.astro";
       parallax-s2
       place-items-center
       
-       z-30 overflow-hidden"
+       z-30 overflow-hidden ml-16"
       >
-        <img
-          class="col-start-4 col-span-1 row-start-2 row-span-1 w-44 z-10 parallax-flaske"
-          src="/src/assets/images/bottle.webp"
-          alt="En tom vandflaske"
-        />
-
         <p
           class="col-start-1 col-span-1 row-start-2 self-baseline row-span-1 z-10 ml-20"
         >
@@ -72,11 +66,7 @@ import Link from "../components/Link.astro";
           brug af produkter som bildæk, tøj, maling og plastik råmateriale til
           fremstilling af plastikprodukter.
         </p>
-        <img
-          class="col-start-1 col-span-1 row-start-2 row-span-1 w-36 parallax-chips"
-          src="/src/assets/images/chips.webp"
-          alt="En tom chipspose"
-        />
+
         <img
           class="plastik-i-havene col-start-2 col-span-3 row-start-1 row-span-3"
           src="/src/assets/images/plastik-fordeling-graf.webp"
@@ -85,7 +75,7 @@ import Link from "../components/Link.astro";
       </div>
     </section>
 
-    <section class="">
+    <section class="ml-16 w-auto h-full">
       <h1 class="md:pl-20 parallax-s3">
         <span>Hvad er problemet med plastik i havene?</span>
       </h1>
@@ -108,7 +98,8 @@ import Link from "../components/Link.astro";
           dyrene får med, når de spiser plastik, og som mennesker får i sig når
           de spiser f.eks. fisk, muslinger og skaldyr. Plastik er også grimt,
           når det ligger i naturen, og kan desuden stoppe vandløb og kvæle
-          planter og dyreliv, når det hober sig op. <br /> Kilde til grafik: <a
+          planter og dyreliv, når det hober sig op. <br />
+          <br />Kilde til grafik: <a
             href="https://sustainabledevelopment.un.org/content/documents/Ocean_Factsheet_Pollution.pdf?fbclid=IwAR2rZxaYSKTIAfK6hS7rOOLg8jZQE14_SlVxkiEnfuzK0zzb2DFNIIAlFYc"
             >FN</a
           >
@@ -150,8 +141,8 @@ import Link from "../components/Link.astro";
     </section>
 
     <section
-      class="grid grid-cols-1 grid-rows-1 h-screen overflow-hidden
-    w-full"
+      class="grid grid-cols-1 grid-rows-1 h-screen overflow-visible
+    w-auto"
     >
       <h2
         class="ml-64 mr-64 text-center z-10 row-start-1 col-start-1 self-center parallax-s4"
@@ -170,9 +161,21 @@ import Link from "../components/Link.astro";
         src="/src/assets/images/chips.webp"
         alt=""
       />
+
+      <img
+        class="row-start-1
+      col-start-1
+      w-20
+      parallax-toothbrush
+      z-0
+      justify-self-end
+      self-center"
+        src="/src/assets/images/toothbrush.webp"
+        alt=""
+      />
     </section>
 
-    <section class="ml-20 flex flex-col w-auto h-screen">
+    <section class="ml-36 flex flex-col w-auto h-screen">
       <h1
         class="col-start-1 col-span-2 row-start-1 row-span-1 gap-5 parallax-s5"
       >
@@ -308,18 +311,46 @@ import Link from "../components/Link.astro";
       </div>
     </section>
 
-    <section class="flex flex-row items-center h-screen
-    w-full z-30 child">
-      <h2 class="ml-64 mr-64 text-center parallax-s6">
+    <section
+      class="grid grid-cols-1 grid-rows-1 h-screen overflow-visible
+    w-auto"
+    >
+      <h2
+        class="ml-64 mr-64 text-center z-10 row-start-1 col-start-1 self-center parallax-s6"
+      >
         Du kan også nemt og hurtigt støtte vores arbejde med <a href="#donation"
           >en privat donation</a
         >, eller at <a href="https://plasticchange.dk/bliv-medlem/"
           >melde dig ind i vores organisation.</a
         >
       </h2>
+      <img
+        class="row-start-1
+        col-start-1
+        w-40
+        ml-20
+        parallax-gb
+        z-0
+        self-center"
+        src="/src/assets/images/garbage-bag.webp"
+        alt=""
+      />
+
+      <img
+        class="row-start-1
+      col-start-1
+      w-40
+      mr-20
+      parallax-bt
+      z-0
+      justify-self-end
+      self-center"
+        src="/src/assets/images/bike-tire.webp"
+        alt=""
+      />
     </section>
 
-    <section class="ml-20 w-auto h-screen mr-20">
+    <section class="ml-16 w-auto h-screen mr-20">
       <h1 class="parallax-s7"><span>Hvem er Plastic Change?</span></h1>
       <div class="grid grid-cols-2 grid-rows-5 parallax-s7">
         <p class="row-start-3 row-span-2 col-start-1 col-span-1 w-96">
@@ -330,7 +361,11 @@ import Link from "../components/Link.astro";
           forskning, og internationalt arbejde. Vi arbejder mod en fremtid, hvor
           reduktion af vores plastikforbrug – særligt engangsplastik – står
           øverst og fylder mest, dernæst mere og bedre design til genbrug og til
-          sidst at øge genanvendelsen.
+          sidst at øge genanvendelsen. <br />
+          <br />
+          Læs mere om vores mission på <a href="https://plasticchange.dk/"
+            >vores hjemmeside</a
+          >.
         </p>
         <div
           class="flex flex-row col-start-2 row-start-1 row-span-5 col-span-2 syv-råd"
@@ -355,7 +390,7 @@ import Link from "../components/Link.astro";
       </div>
     </section>
 
-    <section class="ml-20 w-full h-screen" id="donation">
+    <section class="ml-16 w-auto h-screen" id="donation">
       <h1 class="parallax-s8"><span>Støt vores arbejde</span></h1>
       <div
         class="grid grid-cols-2 grid-rows-1 justify-items-center items-center parallax-s8"
@@ -454,7 +489,7 @@ import Link from "../components/Link.astro";
     target: document.querySelector(".parallaxelement"),
   });
 
-  scroll(animate(".parallaxelement2", { y: [-500, 700] }), {
+  scroll(animate(".parallaxelement2", { y: [-400, 700] }), {
     target: document.querySelector(".parallaxelement"),
   });
 
@@ -462,15 +497,7 @@ import Link from "../components/Link.astro";
     target: document.querySelector(".parallaxelement"),
   });
 
-  // scroll(animate(".parallax-chips", { y: [-600, 200] }), {
-  //   target: document.querySelector(".parallax-chips"),
-  // });
-
-  scroll(animate(".parallax-flaske", { y: [-300, 300] }), {
-    target: document.querySelector(".parallax-flaske"),
-  });
-
-  scroll(animate(".parallax-s2", { y: [-100, 0] }), {
+  scroll(animate(".parallax-s2", { y: [-100, 100] }), {
     target: document.querySelector(".parallax-s2"),
   });
 
@@ -483,6 +510,10 @@ import Link from "../components/Link.astro";
 
   scroll(animate(".parallax-crisps", { y: [-200, 500] }), {
     target: document.querySelector(".parallax-crisps"),
+  });
+
+  scroll(animate(".parallax-toothbrush", { y: [-300, 300] }), {
+    target: document.querySelector(".parallax-toothbrush"),
   });
 
   scroll(animate(".parallax-s5", { y: [-100, 50] }), {
@@ -499,5 +530,13 @@ import Link from "../components/Link.astro";
 
   scroll(animate(".parallax-s8", { y: [-100, 50] }), {
     target: document.querySelector(".parallax-s8"),
+  });
+
+  scroll(animate(".parallax-gb", { y: [-300, 300] }), {
+    target: document.querySelector(".parallax-gb"),
+  });
+
+  scroll(animate(".parallax-bt", { y: [-1000, 200] }), {
+    target: document.querySelector(".parallax-bt"),
   });
 </script>
