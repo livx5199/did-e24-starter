@@ -7,7 +7,7 @@ import Link from "../components/Link.astro";
 <MainLayout title="Titel">
   <div class="flex article flex-col place-items-center overflow-x-hidden">
     <section
-      class="grid grid-cols-3 grid-rows-3 relative p-6 pt-0 h-screen w-full scroll-snap"
+      class="md:grid md:grid-cols-3 md:grid-rows-3 md:relative md:p-6 md:pt-0 md:h-screen md:w-full"
     >
       <img
         src="/src/assets/images/bike-tire.webp"
@@ -22,17 +22,17 @@ import Link from "../components/Link.astro";
       <img
         src="/src/assets/images/fisk.webp"
         alt="Fisk i baggrunden"
-        class="parallaxgrafik2 col-start-1 col-span-2 row-start-1 row-span-2 cover z-0"
+        class="parallaxgrafik2 md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-2 md:cover z-0"
       />
       <h1
-        class="text-9xl parallaxelement col-start-1 col-span-2 row-start-2 row-span-2 z-10 ml-56 self-end"
+        class="md:text-9xl parallaxelement md:col-start-1 md:col-span-2 md:row-start-2 md:row-span-2 z-10 md:ml-56 md:self-end"
       >
         <span>
           Single <br /> use <br />sucks
         </span>
       </h1>
       <h2
-        class="col-start-3 parallaxelement col-span-1 row-start-2 row-span-2 self-end mr-6"
+        class="md:col-start-3 parallaxelement md:col-span-1 md:row-start-2 md:row-span-2 md:self-end md:mr-6"
       >
         Plastik er fantastisk og kan meget. Derfor har vi mennesker flittigt
         brugt det i årtier. Men vidste du, at det meste ender i havet og kan
@@ -41,22 +41,22 @@ import Link from "../components/Link.astro";
       </h2>
     </section>
 
-    <section class="h-screen
+    <section class="md:h-screen
       w-full flex flex-col">
-      <h1 class="parallax-s2 ml-36">
+      <h1 class="parallax-s2 md:ml-36">
         <span>Hvor kommer plastik i havet fra?</span>
       </h1>
       <div
-        class="grid
-      grid-cols-4
-      grid-rows-3
+        class="md:grid
+      md:grid-cols-4
+      md:grid-rows-3
       parallax-s2
-      place-items-center
+      md:place-items-center
       
-       z-30 overflow-hidden ml-16"
+       z-30 overflow-hidden md:ml-16"
       >
         <p
-          class="col-start-1 col-span-1 row-start-2 self-baseline row-span-1 z-10 ml-20"
+          class="md:col-start-1 md:col-span-1 md:row-start-2 md:self-baseline md:row-span-1 z-10 ml-20"
         >
           Plastik, der lander i havet, kommer fra rigtig mange forskellige
           kilder, især engangsprodukter som mademballage, flasker, slik- og
@@ -68,14 +68,14 @@ import Link from "../components/Link.astro";
         </p>
 
         <img
-          class="plastik-i-havene col-start-2 col-span-3 row-start-1 row-span-3"
+          class="plastik-i-havene md:col-start-2 md:col-span-3 md:row-start-1 md:row-span-3"
           src="/src/assets/images/plastik-fordeling-graf.webp"
           alt="Graf over fordeling af plastik i havene"
         />
       </div>
     </section>
 
-    <section class="ml-16 w-auto h-full">
+    <section class="md:ml-16 w-auto md:h-full">
       <h1 class="md:pl-20 parallax-s3">
         <span>Hvad er problemet med plastik i havene?</span>
       </h1>
@@ -83,13 +83,13 @@ import Link from "../components/Link.astro";
         class="md:grid
       md:grid-cols-3
       md:grid-rows-3
-      h-full
+      md:h-full
       md:pl-20
-      place-items-center
-      gap-5
+      md:place-items-center
+      md:gap-5
        z-30 parallax-s3 overflow-hidden"
       >
-        <p class="col-start-1 col-span-1 row-start-2 row-span-2">
+        <p class="md:col-start-1 md:col-span-1 md:row-start-2 md:row-span-2">
           Plastik kan være en trussel mod dyr i alle størrelser og op gennem
           hele fødekæden, fordi de tror det er mad eller fordi de vikles ind i
           det. Man regner med, at mindst 2249 havlevende dyrearter påvirkes af
@@ -106,7 +106,7 @@ import Link from "../components/Link.astro";
         </p>
 
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-2 col-span-2 row-start-1 row-span-2"
+          class="grid grid-cols-2 grid-rows-2 md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-2"
         >
           <img
             src="/src/assets/images/seagull.webp"
@@ -124,7 +124,7 @@ import Link from "../components/Link.astro";
         </div>
 
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-3 col-span-2 row-start-2 row-span-2"
+          class="grid grid-cols-2 grid-rows-2 md:col-start-3 md:col-span-2 md:row-start-2 md:row-span-2"
         >
           <img
             src="/src/assets/images/seal.webp"
@@ -154,7 +154,7 @@ import Link from "../components/Link.astro";
       <img
         class="row-start-1
         col-start-1
-        w-40
+        md:w-40
         parallax-crisps
         z-0
         self-center"
@@ -165,7 +165,7 @@ import Link from "../components/Link.astro";
       <img
         class="row-start-1
       col-start-1
-      w-20
+      md:w-20
       parallax-toothbrush
       z-0
       justify-self-end
@@ -175,15 +175,17 @@ import Link from "../components/Link.astro";
       />
     </section>
 
-    <section class="ml-36 flex flex-col w-auto h-screen">
+    <section class="md:ml-36 md:flex md:flex-col w-auto md:h-screen">
       <h1
-        class="col-start-1 col-span-2 row-start-1 row-span-1 gap-5 parallax-s5"
+        class="md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-1 md:gap-5 parallax-s5"
       >
         <span>Syv gode råd til reducering af plastik</span>
       </h1>
-      <div class="grid grid-cols-8 grid-rows-4 parallax-s5 justify-self-center">
+      <div
+        class="md:grid md:grid-cols-8 md:grid-rows-4 parallax-s5 md:justify-self-center"
+      >
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-1 col-span-2 row-start-1 row-span-2 justify-items-center scale"
+          class="grid grid-cols-2 grid-rows-2 md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-2 md:justify-items-center md:scale"
         >
           <img
             src="/src/assets/images/tote-bag.webp"
@@ -201,7 +203,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-3 col-span-2 row-start-1 row-span-2 scale justify-items-center"
+          class="grid grid-cols-2 grid-rows-2 md:col-start-3 md:col-span-2 md:row-start-1 md:row-span-2 md:scale md:justify-items-center"
         >
           <img
             src="/src/assets/images/flask.webp"
@@ -219,7 +221,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-5 col-span-2 row-start-1 row-span-2 justify-items-center scale"
+          class="grid grid-cols-2 grid-rows-2 md:col-start-5 md:col-span-2 md:row-start-1 md:row-span-2 md:justify-items-center md:scale"
         >
           <img
             src="/src/assets/images/milk.webp"
@@ -237,7 +239,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-7 col-span-2 row-start-1 row-span-2 justify-items-center scale"
+          class="grid grid-cols-2 grid-rows-2 md:col-start-7 md:col-span-2 md:row-start-1 md:row-span-2 md:justify-items-center md:scale"
         >
           <img
             src="/src/assets/images/balloons.webp"
@@ -255,7 +257,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-2 col-span-2 row-start-3 row-span-2 justify-items-center scale"
+          class="grid grid-cols-2 grid-rows-2 md:col-start-2 md:col-span-2 md:row-start-3 md:row-span-2 md:justify-items-center md:scale"
         >
           <img
             src="/src/assets/images/pants.webp"
@@ -273,7 +275,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-4 col-span-2 row-start-3 row-span-2 justify-items-center scale"
+          class="grid grid-cols-2 grid-rows-2 md:col-start-4 md:col-span-2 md:row-start-3 md:row-span-2 md:justify-items-center md:scale"
         >
           <img
             src="/src/assets/images/beauty-products.webp"
@@ -291,7 +293,7 @@ import Link from "../components/Link.astro";
           </h3>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-2 col-start-6 col-span-2 row-start-3 row-span-2 justify-items-center scale"
+          class="grid grid-cols-2 grid-rows-2 md:col-start-6 md:col-span-2 md:row-start-3 md:row-span-2 md:justify-items-center md:scale"
         >
           <img
             src="/src/assets/images/toilet.webp"
@@ -312,7 +314,7 @@ import Link from "../components/Link.astro";
     </section>
 
     <section
-      class="grid grid-cols-1 grid-rows-1 h-screen overflow-visible
+      class="grid grid-cols-1 grid-rows-1 md:h-screen overflow-visible
     w-auto"
     >
       <h2
@@ -327,8 +329,8 @@ import Link from "../components/Link.astro";
       <img
         class="row-start-1
         col-start-1
-        w-40
-        ml-20
+        md:w-40
+        md:ml-20
         parallax-gb
         z-0
         self-center"
@@ -339,8 +341,8 @@ import Link from "../components/Link.astro";
       <img
         class="row-start-1
       col-start-1
-      w-40
-      mr-20
+      md:w-40
+      md:mr-20
       parallax-bt
       z-0
       justify-self-end
@@ -350,10 +352,12 @@ import Link from "../components/Link.astro";
       />
     </section>
 
-    <section class="ml-16 w-auto h-screen mr-20">
+    <section class="md:ml-16 w-auto md:h-screen md:mr-20">
       <h1 class="parallax-s7"><span>Hvem er Plastic Change?</span></h1>
-      <div class="grid grid-cols-2 grid-rows-5 parallax-s7">
-        <p class="row-start-3 row-span-2 col-start-1 col-span-1 w-96">
+      <div class="md:grid md:grid-cols-2 md:grid-rows-5 parallax-s7">
+        <p
+          class="md:row-start-3 md:row-span-2 md:col-start-1 md:col-span-1 md:w-96"
+        >
           Målet om at udfase engangsplastik og skabe bedre genbrugsløsninger er
           en del af alt, hvad vi laver. Både i vores politiske arbejde, i
           samarbejde med vores innovationspartnere og med civilbefolkningen. Og
@@ -368,7 +372,7 @@ import Link from "../components/Link.astro";
           >.
         </p>
         <div
-          class="flex flex-row col-start-2 row-start-1 row-span-5 col-span-2 syv-råd"
+          class="flex flex-row md:col-start-2 md:row-start-1 md:row-span-5 md:col-span-2 syv-råd"
         >
           <div class="flex flex-col items-center">
             <h3 class="mb-5"><span>Virkeligheden</span></h3>
@@ -390,13 +394,13 @@ import Link from "../components/Link.astro";
       </div>
     </section>
 
-    <section class="ml-16 w-auto h-screen" id="donation">
+    <section class="md:ml-16 w-auto md:h-screen" id="donation">
       <h1 class="parallax-s8"><span>Støt vores arbejde</span></h1>
       <div
-        class="grid grid-cols-2 grid-rows-1 justify-items-center items-center parallax-s8"
+        class="md:grid md:grid-cols-2 md:grid-rows-1 md:justify-items-center md:items-center parallax-s8"
       >
         <div
-          class="form-baggrund flex flex-col w-3/5 p-5 col-start-1 row-start-1"
+          class="form-baggrund flex flex-col md:w-3/5 md:p-5 md:col-start-1 md:row-start-1"
         >
           <div class="flex flex-row pr-10 m-5">
             <div class="mr-4">
@@ -461,7 +465,7 @@ import Link from "../components/Link.astro";
         </div>
 
         <div
-          class="pl-10 pr-10 w-4/5 flex flex-col items-center col-start-2 row-start-1"
+          class="md:pl-10 md:pr-10 md:w-4/5 flex flex-col items-center md:col-start-2 md:row-start-1"
         >
           <img
             src="/src/assets/images/hjemhavn-cup.webp"
