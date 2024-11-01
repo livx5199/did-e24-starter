@@ -3,7 +3,26 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
+import balloons from "../assets/images/balloons.webp";
 import fisk from "../assets/images/fisk.webp";
+import beautyproducts from "../assets/images/beauty-products.webp";
+import biketire from "../assets/images/bike-tire.webp";
+import bottle from "../assets/images/bottle.webp";
+import chips from "../assets/images/chips.webp";
+import flask from "../assets/images/flask.webp";
+import garbagebag from "../assets/images/garbage-bag.webp";
+import hjemhavncup from "../assets/images/hjemhavn-cup.webp";
+import milk from "../assets/images/milk.webp";
+import pants from "../assets/images/pants.webp";
+import plasticbag from "../assets/images/plastic-bag.webp";
+import fordelinggraf from "../assets/images/plastik-fordeling-graf.webp";
+import seagull from "../assets/images/seagull.webp";
+import seal from "../assets/images/seal.webp";
+import toilet from "../assets/images/toilet.webp";
+import toothbrush from "../assets/images/toothbrush.webp";
+import totebag from "../assets/images/tote-bag.webp";
+import trekantønske from "../assets/images/trekantsgraf-ønske.svg";
+import trekantvirkelighed from "../assets/images/trekantsgraf-virkelighed.svg";
 ---
 
 <MainLayout title="Titel">
@@ -11,8 +30,8 @@ import fisk from "../assets/images/fisk.webp";
     <section
       class="grid grid-rows-2 grid-cols-1 md:grid md:grid-cols-3 md:grid-rows-3 md:relative md:p-6 md:pt-0 md:h-screen md:w-full"
     >
-      <img
-        src="/src/assets/images/bike-tire.webp"
+      <Image
+        src={biketire}
         alt=""
         class="parallaxelement2 col-start-1 row-start-2 md:col-start-3 md:col-span-1 md:row-start-3 md:row-span-1 z-20 max-w-48"
       />
@@ -70,11 +89,10 @@ import fisk from "../assets/images/fisk.webp";
           brug af produkter som bildæk, tøj, maling og plastik råmateriale til
           fremstilling af plastikprodukter.
         </p>
-
-        <img
-          class="plastik-i-havene md:col-start-2 md:col-span-3 md:row-start-1 md:row-span-3"
-          src="/src/assets/images/plastik-fordeling-graf.webp"
+        <Image
+          src={fordelinggraf}
           alt="Graf over fordeling af plastik i havene"
+          class="plastik-i-havene md:col-start-2 md:col-span-3 md:row-start-1 md:row-span-3"
         />
       </div>
     </section>
@@ -112,8 +130,8 @@ import fisk from "../assets/images/fisk.webp";
         <div
           class="grid grid-cols-2 grid-rows-2 md:col-start-2 md:col-span-2 md:row-start-1 md:row-span-2 place-items-center md:place-items-start"
         >
-          <img
-            src="/src/assets/images/seagull.webp"
+          <Image
+            src={seagull}
             alt="Billede af måge"
             class="måge col-start-1 col-span-3 row-start-1 row-span-3 w-80"
           />
@@ -130,8 +148,8 @@ import fisk from "../assets/images/fisk.webp";
         <div
           class="grid grid-cols-2 grid-rows-2 md:col-start-3 md:col-span-2 md:row-start-2 md:row-span-2 place-items-center"
         >
-          <img
-            src="/src/assets/images/seal.webp"
+          <Image
+            src={seal}
             alt="Billede af sæl"
             class="sæl col-start-1 col-span-3 row-start-1 row-span-3 w-64"
           />
@@ -155,29 +173,16 @@ import fisk from "../assets/images/fisk.webp";
         plastikforbrug og -forurening i stedet for en ”brug-og-smid-væk”-kultur,
         hvor vores dyrebare ressourcer ikke bliver brugt igen og igen.
       </h2>
-      <img
-        class="row-start-1
-        col-start-1
-        md:w-40
-        w-32
-        parallax-crisps
-        z-0
-        self-center"
-        src="/src/assets/images/chips.webp"
-        alt=""
+      <Image
+        class="row-start-1 col-start-1 md:w-40 w-32 parallax-crisps z-0 self-center"
+        src={chips}
+        alt="En pose med chips"
       />
 
-      <img
-        class="row-start-1
-      col-start-1
-      md:w-20
-      w-16
-      parallax-toothbrush
-      z-0
-      justify-self-end
-      self-center"
-        src="/src/assets/images/toothbrush.webp"
-        alt=""
+      <Image
+        class="row-start-1 col-start-1 md:w-20 w-16 parallax-toothbrush z-0 justify-self-end self-center"
+        src={toothbrush}
+        alt="En tandbørste"
       />
     </section>
 
@@ -193,8 +198,8 @@ import fisk from "../assets/images/fisk.webp";
         <div
           class="place-items-center m-5 grid grid-cols-2 grid-rows-2 md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-2 justify-items-center md:scale"
         >
-          <img
-            src="/src/assets/images/tote-bag.webp"
+          <Image
+            src={totebag}
             alt="Billede af tote bag"
             class="col-start-1 col-span-3 row-start-1 row-span-3 w-40 syv-råd"
           />
@@ -211,8 +216,8 @@ import fisk from "../assets/images/fisk.webp";
         <div
           class="place-items-center m-5 grid grid-cols-2 grid-rows-2 md:col-start-3 md:col-span-2 md:row-start-1 md:row-span-2 md:scale md:justify-items-center"
         >
-          <img
-            src="/src/assets/images/flask.webp"
+          <Image
+            src={flask}
             alt="Billede af flaske"
             class="col-start-1 col-span-3 row-start-1 row-span-3 w-20 syv-råd"
           />
@@ -229,8 +234,8 @@ import fisk from "../assets/images/fisk.webp";
         <div
           class="place-items-center m-5 grid grid-cols-2 grid-rows-2 md:col-start-5 md:col-span-2 md:row-start-1 md:row-span-2 md:justify-items-center md:scale"
         >
-          <img
-            src="/src/assets/images/milk.webp"
+          <Image
+            src={milk}
             alt="Billede af en mælkekarton"
             class="col-start-1 col-span-3 row-start-1 row-span-3 w-32 syv-råd"
           />
@@ -247,8 +252,8 @@ import fisk from "../assets/images/fisk.webp";
         <div
           class="place-items-center m-5 grid grid-cols-2 grid-rows-2 md:col-start-7 md:col-span-2 md:row-start-1 md:row-span-2 md:justify-items-center md:scale"
         >
-          <img
-            src="/src/assets/images/balloons.webp"
+          <Image
+            src={balloons}
             alt="Billede af balloner"
             class="col-start-1 col-span-3 row-start-1 row-span-3 w-40 syv-råd"
           />
@@ -265,8 +270,8 @@ import fisk from "../assets/images/fisk.webp";
         <div
           class="place-items-center m-5 grid grid-cols-2 grid-rows-2 md:col-start-2 md:col-span-2 md:row-start-3 md:row-span-2 md:justify-items-center md:scale"
         >
-          <img
-            src="/src/assets/images/pants.webp"
+          <Image
+            src={pants}
             alt="Billede af et par jeans"
             class="col-start-1 col-span-3 row-start-1 row-span-3 w-44 syv-råd"
           />
@@ -283,8 +288,8 @@ import fisk from "../assets/images/fisk.webp";
         <div
           class="place-items-center m-5 grid grid-cols-2 grid-rows-2 md:col-start-4 md:col-span-2 md:row-start-3 md:row-span-2 md:justify-items-center md:scale"
         >
-          <img
-            src="/src/assets/images/beauty-products.webp"
+          <Image
+            src={beautyproducts}
             alt="Billede af plejeprodukter"
             class="col-start-1 col-span-3 row-start-1 row-span-3 w-60 syv-råd"
           />
@@ -301,8 +306,8 @@ import fisk from "../assets/images/fisk.webp";
         <div
           class="place-items-center m-5 grid grid-cols-2 grid-rows-2 md:col-start-6 md:col-span-2 md:row-start-3 md:row-span-2 md:justify-items-center md:scale"
         >
-          <img
-            src="/src/assets/images/toilet.webp"
+          <Image
+            src={toilet}
             alt="Billede af et toilet"
             class="col-start-1 col-span-3 row-start-1 row-span-3 w-36 syv-råd"
           />
@@ -332,33 +337,16 @@ import fisk from "../assets/images/fisk.webp";
           >melde dig ind i vores organisation.</a
         >
       </h2>
-      <img
-        class="row-start-1
-        col-start-1
-        md:w-40
-        md:ml-20
-        w-40
-        ml-3
-        parallax-gb
-        z-0
-        self-center"
-        src="/src/assets/images/garbage-bag.webp"
-        alt=""
+      <Image
+        class="row-start-1 col-start-1 md:w-40 md:ml-20 w-40 ml-3 parallax-gb z-0 self-center"
+        src={garbagebag}
+        alt="En plastikpose"
       />
 
-      <img
-        class="row-start-1
-      col-start-1
-      md:w-40
-      md:mr-20
-      w-40
-      mr-3
-      parallax-bt
-      z-0
-      justify-self-end
-      self-center"
-        src="/src/assets/images/bike-tire.webp"
-        alt=""
+      <Image
+        class="row-start-1 col-start-1 md:w-40 md:mr-20 w-40 mr-3 parallax-bt z-0 justify-self-end self-center"
+        src={biketire}
+        alt="Et cykelhjul"
       />
     </section>
 
@@ -388,16 +376,16 @@ import fisk from "../assets/images/fisk.webp";
         >
           <div class="flex flex-col items-center">
             <h3 class="mb-5"><span>Virkeligheden</span></h3>
-            <img
-              src="/src/assets/images/trekantsgraf-virkelighed.svg"
+            <Image
+              src={trekantvirkelighed}
               alt="Pyramidegraf over anvendelse af plastik nu fra mest til mindst"
               class="w-80"
             />
           </div>
           <div class="flex flex-col items-center">
             <h3 class="mb-5"><span>Vores ønske</span></h3>
-            <img
-              src="src/assets/images/trekantsgraf-ønske.svg"
+            <Image
+              src={trekantønske}
               alt="Pyramidegraf over anvendelse af plastik efter vores ønske fra mest til mindst"
               class="w-80"
             />
@@ -480,8 +468,8 @@ import fisk from "../assets/images/fisk.webp";
           class="md:pl-10 md:pr-10 md:w-4/5 flex flex-col items-center md:col-start-2 md:row-start-1"
           class="flex flex-col items-center col-start-2 row-start-1 mt-10 mb-10"
         >
-          <img
-            src="/src/assets/images/hjemhavn-cup.webp"
+          <Image
+            src={hjemhavncup}
             alt="Et billede af en Plastic Change kop"
             class="w-40"
           />
